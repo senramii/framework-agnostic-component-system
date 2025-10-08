@@ -1,0 +1,21 @@
+.data-table-error-fallback {
+  padding: 0;
+
+  &__container {
+    background: #fee;
+    border: 2px solid #e74c3c;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    color: #c0392b;
+    margin: 20px;
+  }
+
+  &__title {
+    margin-bottom: 10px;
+  }
+
+  &__message {
+    margin: 0;
+  }
+}

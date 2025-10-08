@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": ["ES2022", "DOM"],
+    "module": "ES2022",
+    "declaration": true,
+    "outDir": "dist/types",
+    "strict": true,
+    "moduleResolution": "bundler",
+    "emitDeclarationOnly": true,
+    "esModuleInterop": true
+  },
+  "include": ["src/index.ts"],
+  "exclude": ["node_modules", "dist"]
+}
+

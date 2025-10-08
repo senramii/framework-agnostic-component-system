@@ -1,0 +1,39 @@
+{
+  "name": "@senramii/employee-management-core",
+  "version": "0.0.10",
+  "repository": "https://github.com/senramii/framework-agnostic-component-system",
+  "type": "module",
+  "main": "dist/index.umd.js",
+  "module": "dist/index.es.js",
+  "types": "dist/types/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/types/index.d.ts",
+      "import": "./dist/index.es.js",
+      "require": "./dist/index.umd.js"
+    },
+    "./style/components": {
+      "types": "./dist/types/style-modules.d.ts",
+      "import": "./dist/components.css"
+    },
+    "./style/base": {
+      "types": "./dist/types/style-modules.d.ts",
+      "import": "./dist/base.css"
+    }
+  },
+  "scripts": {
+    "build": "vite build && tsc && cp style-modules.d.ts dist/types/"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^24.7.0",
+    "copyfiles": "^2.4.1",
+    "sass": "^1.93.2",
+    "typescript": "^5.9.3",
+    "vite": "^7.1.9"
+  },
+  "files": [
+    "dist"
+  ]
+}
+

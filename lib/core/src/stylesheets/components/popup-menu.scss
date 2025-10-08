@@ -1,0 +1,35 @@
+.popup-menu {
+  position: fixed;
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+  min-width: 150px;
+
+  &__copy-item {
+    padding: 12px 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    &:hover {
+      background: #f3f4f6;
+    }
+  }
+
+  &__view-detail {
+    padding: 12px 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border-top: 1px solid #f3f4f6;
+
+    &:hover {
+      background: #f3f4f6;
+    }
+  }
+}
+
